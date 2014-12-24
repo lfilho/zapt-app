@@ -1,0 +1,14 @@
+2014-12-24 20:13:26.839 Zapt Arteatral[50802:4525990] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/marelo/Library/Developer/CoreSimulator/Devices/FC0FC2DC-56E0-4737-A153-FB2D3FE22571/data/Containers/Data/Application/640D1EE1-85D3-4EAD-A448-F16AA0F977E7/Library/Cookies/Cookies.binarycookies
+2014-12-24 20:13:27.282 Zapt Arteatral[50802:4525990] Apache Cordova native platform version 3.7.0 is starting.
+2014-12-24 20:13:27.283 Zapt Arteatral[50802:4525990] Multi-tasking -> Device: YES, App: YES
+2014-12-24 20:13:27.312 Zapt Arteatral[50802:4525990] Unlimited access to network resources
+2014-12-24 20:13:27.324 Zapt Arteatral[50802:4525990] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2014-12-24 20:13:28.950 Zapt Arteatral[50802:4525990] Resetting plugins due to page load.
+2014-12-24 20:13:29.298 Zapt Arteatral[50802:4525990] Finished load of: file:///Users/marelo/Library/Developer/CoreSimulator/Devices/FC0FC2DC-56E0-4737-A153-FB2D3FE22571/data/Containers/Bundle/Application/485804BC-47B1-40DE-9A33-CD1681D2A8C3/Zapt%20Arteatral.app/www/index.html
