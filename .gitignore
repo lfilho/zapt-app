@@ -1,4 +1,6 @@
 platforms/*/cordova/console.log
+#`cordova info`:
+info.txt
 
 # Created by https://www.gitignore.io
 
