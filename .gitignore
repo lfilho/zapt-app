@@ -1,4 +1,5 @@
-console.log
+platforms/*/cordova/console.log
+
 # Created by https://www.gitignore.io
 
 ### Xcode ###
