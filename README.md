@@ -3,7 +3,23 @@ Zapt App
 
 Simple PhoneGap application for Zapt Arteatral's (a brazillian NGO) members.
 
-It's purpose: notify members of activities, tasks and events.
+## Features
+
+### MVP (current development)
+
+  * Login based on phone number (WhatsApp-like)
+  * Users actions:
+    * Administrator:
+      * CRUD and assign tasks to members
+      * CRUD events
+    * Regular members:
+      * Get notified about events and tasks
+
+### Further ideas
+
+  * Broadcast arbitrary messages to all members
+  * Rich text in tasks, messages and events
+  * Images and other attachmetns in tasks, messages and events
 
 ## Conventions
 
