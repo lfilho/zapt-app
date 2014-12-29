@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="br.com.zaptarteatral" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <name>Zapt Arteatral</name>
+    <description>
+        App simples para notificar membros de atividades, tarefas, eventos e etc.
+    </description>
+    <author email="lfilho@gmail.com" href="http://luiz.in">
+        Luiz Gonzaga dos Santos Filho
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+    </feature>
+    <feature name="Vibration">
+        <param name="android-package" value="org.apache.cordova.vibration.Vibration" />
+    </feature>
+</widget>
