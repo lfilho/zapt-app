@@ -1,4 +1,5 @@
 platforms/*/cordova/console.log
+node_modules/
 #`cordova info`:
 info.txt
 
