@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "browserify": "browserify -t hbsfy resources/src/js/index.js -o www/js/build.js",
-    "build-www": "npm run browserify && cp -r resources/src/css resources/src/img www",
-    "emulate-ios": "npm run build-www && cordova emulate ios"
+    "clean-www": "rm -rf www/js/* www/{img,css}/* index.html",
+    "browserify": "browserify -t hbsfy resources/src/js/index.js -o www/js/bundle.js",
+    "bundle-www": "npm run clean-www && npm run browserify && cp -r resources/src/{css,img,index.html} www",
+    "emulate-ios": "npm run bundle-www && cordova emulate ios",
+    "emulate-browser": "npm run bundle-www && cordova emulate browser"
   },
   "repository": {
     "type": "git",

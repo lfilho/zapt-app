@@ -12847,52 +12847,49 @@ $('body').on('click', '.back-button', function (event) {
     window.history.back();
 });
 
-Backbone.history.start();
-
 window.alert('index.js');
 // router.navigate('', { trigger: true });
 
-// var app = {
-//     // Application Constructor
-//     initialize: function() {
-//         this.bindEvents();
-//     },
-//     // Bind Event Listeners
-//     //
-//     // Bind any events that are required on startup. Common events are:
-//     // 'load', 'deviceready', 'offline', and 'online'.
-//     bindEvents: function() {
-//         document.addEventListener('deviceready', this.onDeviceReady, false);
-//     },
-//     // deviceready Event Handler
-//     //
-//     // The scope of 'this' is the event. In order to call the 'receivedEvent'
-//     // function, we must explicitly call 'app.receivedEvent(...);'
-//     onDeviceReady: function() {
-//         app.receivedEvent('deviceready');
-//     },
-//     // Update DOM on a Received Event
-//     receivedEvent: function(id) {
-//         var parentElement = document.getElementById(id);
-//         var listeningElement = parentElement.querySelector('.listening');
-//         var receivedElement = parentElement.querySelector('.received');
-//
-//         listeningElement.setAttribute('style', 'display:none;');
-//         receivedElement.setAttribute('style', 'display:block;');
-//
-//         console.log('Received Event: ' + id);
-//     }
-// };
-//
-// app.initialize();
+document.addEventListener('deviceready', function() {
+    Backbone.history.start();
+    window.alert('device is ready');
+}, false);
+
+var app = {
+    // Application Constructor
+    initialize: function() {
+        this.bindEvents();
+    },
+    // Bind Event Listeners
+    //
+    // Bind any events that are required on startup. Common events are:
+    // 'load', 'deviceready', 'offline', and 'online'.
+    bindEvents: function() {
+    },
+    // deviceready Event Handler
+    //
+    // The scope of 'this' is the event. In order to call the 'receivedEvent'
+    // function, we must explicitly call 'app.receivedEvent(...);'
+    onDeviceReady: function() {
+        app.receivedEvent('deviceready');
+    },
+    // Update DOM on a Received Event
+    receivedEvent: function(id) {
+        var parentElement = document.getElementById(id);
+        var listeningElement = parentElement.querySelector('.listening');
+        var receivedElement = parentElement.querySelector('.received');
+
+        listeningElement.setAttribute('style', 'display:none;');
+        receivedElement.setAttribute('style', 'display:block;');
+
+        console.log('Received Event: ' + id);
+    }
+};
 
 },{"./router":13,"backbone":1,"jquery":11}],13:[function(require,module,exports){
 'use strict';
 
-var $ = require('jquery'),
-    Backbone = require('backbone');
-
-Backbone.$ = $;
+var Backbone = require('backbone');
 
 var HomeView = require('./views/Home');
 var homeView = new HomeView();
@@ -12904,11 +12901,10 @@ module.exports = Backbone.Router.extend({
 
     home: function () {
         window.alert('home view' + homeView);
-//        homeView.delegateEvents();
     }
 });
 
-},{"./views/Home":14,"backbone":1,"jquery":11}],14:[function(require,module,exports){
+},{"./views/Home":14,"backbone":1}],14:[function(require,module,exports){
 'use strict';
 
 var Backbone = require('backbone'),
@@ -12918,31 +12914,22 @@ var Backbone = require('backbone'),
 Backbone.$ = $;
 
 module.exports = Backbone.View.extend({
+    el: '.app',
+
     initialize: function () {
-        console.log("alert home initialize");
+        window.alert("alert home initialize");
         this.render();
     },
 
     render: function () {
         this.$el.html(template());
-        console.log('render');
+        window.alert('render');
         return this;
     },
 
     // events: {
     //     "keyup .search-key": "search",
     //     "keypress .search-key": "onkeypress"
-    // },
-    //
-    // search: function (event) {
-    //     var key = $('.search-key').val();
-    //     this.employeeList.fetch({reset: true, data: {name: key}});
-    // },
-    //
-    // onkeypress: function (event) {
-    //     if (event.keyCode === 13) { // enter key pressed
-    //         event.preventDefault();
-    //     }
     // }
 });
 
@@ -12950,7 +12937,7 @@ module.exports = Backbone.View.extend({
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-  return "<div class=\"topcoat-navigation-bar\">\n    <div class=\"topcoat-navigation-bar__item center full\">\n        <h1 class=\"topcoat-navigation-bar__title\">Test</h1>\n    </div>\n</div>\n<div class=\"search-bar\">\n    <input type=\"search\" placeholder=\"search\" class=\"topcoat-search-input search-key\" style=\"width:100%;\">\n</div>\n<div class=\"topcoat-list__container scroller\" style=\"top:138px;\"></div>\n";
+  return "<h1>Zapt App</h1>\n<div id=\"deviceready\" class=\"blink\">\n    <p class=\"event listening\">Conectando ao dispositivo.</p>\n    <p class=\"event received\">Dispositvo pronto!</p>\n</div>\n";
   },"useData":true});
 
 },{"hbsfy/runtime":10}]},{},[12]);
