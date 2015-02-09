@@ -1,7 +1,14 @@
 Zapt App
 ========
 
+_(Para desenvolvedores brasileiros, veja [este arquivo](README_pt-br.md) no lugar deste.)_
+
 Simple PhoneGap application for Zapt Arteatral's (a brazillian NGO) members.
+
+Since this app in very target to a specific brazillian group workflow, most of it will be done in portuguese.
+When ready, we might translate and update all the docs accordingly.
+
+Here goes a basic description in english:
 
 ## Features
 

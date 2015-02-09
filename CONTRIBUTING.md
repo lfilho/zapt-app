@@ -8,8 +8,8 @@ You'll need: `git`, `node`, `npm` (comes with node) and the according SDK for th
   1. Clone this repo
   2. Run `npm i`
   3. Install Browserify client for convenience: `npm i -g browserify`
-  4. For iOS development, follow [these instructions](http://docs.phonegap.com/en/edge/guide_platforms_android_index.md.html#Android%20Platform%20Guide).
-  5. For Android development, follow [these instructions](http://docs.phonegap.com/en/edge/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide).
+  4. For Android development, follow [these instructions](http://docs.phonegap.com/en/edge/guide_platforms_android_index.md.html#Android%20Platform%20Guide).
+  5. For iOS development, follow [these instructions](http://docs.phonegap.com/en/edge/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide).
 
 ## Cordova development path
 
@@ -28,7 +28,7 @@ All the task automations will be using merely npm scripts. No gulp, grunt, etc t
 Please follow the following conventions while contributing to this repo:
 
   * **Code Language**: English
-  * **Line endings**: Unix Style
+  * **Line endings**: Unix Style (LF)
   * **Whitespaces**:
     * Spaces for tabs
     * No trailing whitespaces
